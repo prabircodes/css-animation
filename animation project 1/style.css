@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+}
+
+.circle {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+}
+
+.circle-1 {
+  border: 1px solid rgb(157, 157, 241);
+  transition: opacity 1s ease;
+}
+
+.circle-2 {
+  width: 60%;
+  height: 60%;
+  border: 1.5px solid rgb(141, 141, 238);
+  transition: opacity 1s 0.2s ease;
+}
+
+.circle-3 {
+  border: 2px dashed tomato;
+  transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.facebook:hover .circle-1,
+.facebook:hover .circle-2 {
+  opacity: 1;
+}
+
+.instagram:hover .circle-3 {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.twitter {
+    transition: all 1s ease-out;
+}
+
+.twitter:hover {
+    transform: rotate(360deg);
+}
